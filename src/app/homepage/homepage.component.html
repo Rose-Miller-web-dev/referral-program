@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="hero-section d-lg-flex d-sm-block d-md-block">
+            <div class="hero-data">
+                <div class="hero-title">
+                    <h2>Unlock Rewards with Locom Referral Program!</h2>
+                </div>
+                <div class="hero-description">
+                    <p>
+                        Join the Locom Referral Program and embark on a
+                         rewarding journey! Spread the word about our
+                          innovative platform, and as your referrals sign up
+                             and engage, you'll unlock exclusive benefits,
+                              discounts, and special perks.
+                    </p>
+                </div>
+
+                <button routerLink="referral" class="btn cta">Invite Your Friends</button>
+            </div>
+
+            <img class="hero-image" src="./../../assets/images/65Z_2112.w009.n001.69C.p6.69.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="refer-program-container">
+        <h2 class="ref-prog-title">
+            Current Referral Program
+        </h2>
+
+        <ul class="ref-list d-lg-flex d-md-block d-sm-block">
+
+            <li class="ref-item">
+                <img class="ref-logo" src="./../../assets/images/collaborate(1).png" alt="">
+                <h4 class="ref-title">Current Referrals</h4>
+                <h4 class="ref-title">{{ current_referrals }}</h4>
+
+                <small>paid amount : $ {{ paid_referrals }}</small>
+            </li>
+
+            <li class="ref-item">
+                <img class="ref-logo" src="./../../assets/images/hourglass(1).png" alt="">
+                <h4 class="ref-title">Days Remaining</h4>
+                <h4 class="ref-title">{{ days_remaining }}</h4>
+                <small style="color: white;"> Lorem ipsum dolor sit amet.  </small>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="guide container pb-5">
+        <h3 class="refer-guide-title">How To Refer a Friend</h3>
+
+        <div class="inner-guide-conyainer d-lg-flex d-md-block d-sm-block">
+            <ul class="guide-list">
+
+                <li class="guide-item">
+                    <img src="" alt="">
+                    <h4 class="guide-title">Sign in to Locom</h4>
+                    <p class="lead">{{ guide_1 }}</p>
+                </li>
+
+                <li class="guide-item">
+                    <img src="" alt="">
+                    <h4 class="guide-title">Refer a friend</h4>
+                    <p class="lead">{{ guide_2 }}</p>
+                </li>
+
+                <li class="guide-item">
+                    <img src="" alt="">
+                    <h4 class="guide-title">Watch your inbox</h4>
+                    <p class="lead">{{ guide_3 }}</p>
+                </li>
+    
+            </ul>
+
+            <div class="refer-image-container">
+                <img src="./../../assets/images/Online page-pana.png" alt="" class="refer-image">
+            </div>
+            
+        </div>
+       
+    </div>
+
+    <section class="personal-refer pt-5" style="background-color: #f4f5f7;">
+        <div class="container py-1">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col col-lg-8 mb-4">
+              <div class="card mb-3" style="border-radius: .5rem;">
+                <div class="row g-0">
+                  <div class="col-md-4 gradient-custom text-center text-white">
+                    <img src="{{ current_user_profile }}" 
+                      alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
+                    <h5>{{ current_user_username }}</h5>
+                    <br>
+                    <h5>{{ current_user_referral_num }} Reffers</h5>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body p-4">
+                      <h6 style="color: #38B6FF;">Information</h6>
+                      <hr class="mt-0 mb-4">
+                      <div class="row pt-1">
+                        <div class="col-6 mb-3">
+                          <h6 style="color: #38B6FF;">Email</h6>
+                          <p class="text-muted">{{ current_user_email }}</p>
+                        </div>
+                        <div class="col-6 mb-3">
+                          <h6 style="color: #38B6FF;">Phone</h6>
+                          <p class="text-muted">123 456 789</p>
+                        </div>
+                      </div>
+                      <h6 style="color: #38B6FF;">Social Media</h6>
+                      <hr class="mt-0 mb-4">
+                      <div class="row socail-sec">
+                        <div class="col-12">
+                            <a class="social-link" href=""><img src="./../../assets/images/icons8-instagram-500.png" alt=""></a>
+                            <a class="social-link" href=""><img src="./../../assets/images/icons8-facebook-500.png" alt=""></a>
+                            <a class="social-link" href=""><img src="./../../assets/images/icons8-twitter-500.png" alt=""></a>
+                            <a class="social-link" href=""><img src="./../../assets/images/icons8-linkedin-500.png" alt=""></a>
+                            <a class="social-link" href=""><img src="./../../assets/images/icons8-email-100.png" alt=""></a>
+                            <a class="social-link" href=""><img src="./../../assets/images/icons8-sms-96.png" alt=""></a>
+                            <a class="social-link" href=""><img src="./../../assets/images/icons8-pinterest-500.png" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+</body>
+
+</html>

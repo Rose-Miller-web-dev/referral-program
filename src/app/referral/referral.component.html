@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3 class="intro-title">Hi <span class="binded">{{current_user}}</span>!</h3>
+    
+    <div class="introduction container d-lg-flex d-md-block d-sm-block">
+        <p class="intro-letter">
+            
+            Your friend <span class="binded">{{referrer_name}}</span> referred you to our referral program! Join now to enjoy exclusive benefits and rewards while sharing the love with your network.
+    
+            Here's how it works:
+    
+            Sign up using the unique referral link provided by <span class="binded">{{referrer_name}}</span>.
+            Share your referral link with friends, family, and colleagues.
+            When someone signs up or makes a purchase using your link, both you and the person you referred will receive a reward or discount.
+            Click below to create your account and start referring:
+    
+            <span class="binded">{{referral_link}}</span>
+    
+            If you have any questions, feel free to reach out to our support team.
+    
+            Welcome aboard!
+            
+            <span class="binded">{{company_name}}</span>
+            <br>
+            <a href="{{ review_link }}"><button class="btn review-link-btn">Review Link</button></a>
+        </p>
+
+        <div class="intro-image-container">
+            <img class="intro-image" src="{{ review_image }}" alt="">
+        </div>
+        
+    </div>
+
+    <div class="prog-detail">
+        <h3 class="program-detail-title">Program Details</h3>
+        <div class="inner-container">
+            <div class="prog-detail-data">
+                Introducing our new referral program at <span class="binded">{{ company_name }}</span>!
+                Spread the word about our products/services and be rewarded for your support.
+                Here's how it works:
+                <ol>
+                    <li>
+                        Refer: Tell your friends, family, or colleagues about <span class="binded">{{ company_name }}</span>.
+                    </li>
+    
+                    <li>
+                        Purchase/Sign-Up: When they make a purchase or sign up,
+                        make sure they mention your name or use your unique referral code.
+                    </li>
+    
+                    <li>
+                        Rewards: You'll receive <span class="binded">{{ program_reward }}</span> for each successful referral.
+                    </li>
+    
+                    <li>
+                        Eligibility: All current customers/employees can participate.
+                        Referrals must be new customers/employees.
+                    </li>
+    
+                    <li>
+                        Verification: Referrals will be verified within <span class="binded">{{ program_period }}</span> days.
+                    </li>
+    
+                    <li>
+                        Redemption: Once verified, you'll receive instructions on how to claim your rewards.
+                    </li>
+    
+                    <li>
+                        Program Duration: The referral program runs from
+                        <span class="binded">{{ program_starting_date }}</span> to <span class="binded">{{ program_due_date }}</span>.
+                    </li>
+    
+                    <li>
+                        Thank you for your support. Refer today and start earning rewards!
+                    </li>
+    
+                    <li>
+                        For any questions, contact our customer support team at <span class="binded">{{ company_web_address }}</span>.
+                    </li>
+                </ol>
+                <span class="binded">{{ company_name }}</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="purchase container d-lg-flex d-md-block d-sm-block">
+
+        <div class="purchase-image-container">
+            <img class="purchase-image" src="./.././../assets/images/cruise-pana.png" alt="">
+        </div>
+
+        <div class="purchase-inner-container">
+            <h3 class="purchase-title">Purchase and Win a Holiday!</h3>
+
+            <p class="purchase-data">
+                Ready to turn your travel dreams into reality? Visit VoyageScope now and enter our 
+                "Win a Dream Holiday" contest!
+                Explore our curated travel packages, 
+                indulge in unforgettable experiences, 
+                and enjoy seamless arrangements. With each purchase, 
+                you automatically enter for a chance to win an incredible vacation package.
+                Don't miss out! Start your journey today and get closer to 
+                winning the holiday of your dreams.
+                Happy travels!
+            </p>
+
+            <a href="http://voyagescope.com"><button class="btn purchase-btn">Check out Now!</button></a>
+        </div>
+    </div>
+
+    <section class="py-5" style="background-color: #eee;">
+        <div class="container my-5">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-10 col-xl-11">
+              <div class="card text-black" style="border-radius: 25px;">
+                <div class="card-body p-md-5">
+                  <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-5 col-xl-5 order-2 order-lg-1">
+      
+                      <p class="text-center h3 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+      
+                      <form class="mx-1 mx-md-4">
+      
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <input type="text" id="form3Example1c" class="form-control" />
+                            <label class="form-label" for="form3Example1c">Your Name</label>
+                          </div>
+                        </div>
+      
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <input type="email" id="form3Example3c" class="form-control" />
+                            <label class="form-label" for="form3Example3c">Your Email</label>
+                          </div>
+                        </div>
+      
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <input type="password" id="form3Example4c" class="form-control" />
+                            <label class="form-label" for="form3Example4c">Password</label>
+                          </div>
+                        </div>
+      
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <input type="password" id="form3Example4cd" class="form-control" />
+                            <label class="form-label" for="form3Example4cd">Repeat your password</label>
+                          </div>
+                        </div>
+      
+                        <div class="form-check d-flex justify-content-center mb-5">
+                          <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                          <label class="form-check-label" for="form2Example3">
+                            I agree all statements in <a href="#!">Terms of service</a>
+                          </label>
+                        </div>
+      
+                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                          <button type="button" class="btn btn-lg">Register</button>
+                        </div>
+      
+                      </form>
+      
+                    </div>
+                    <div class="col-md-8 col-lg-4 col-xl-6 d-flex align-items-center order-1 order-lg-2">
+      
+                      <img src="./../../assets/images/Mobile login-bro.png"
+                        class="img-fluid" alt="Sample image">
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+</body>
+</html>

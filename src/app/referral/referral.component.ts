@@ -9,6 +9,7 @@ export class ReferralComponent implements OnInit{
   ngOnInit(): void {
       
   }
+  text = "Hello, I am an editable textarea. Hover and select me to see the editable textbox!"
 
   current_user: string = "username"
   referrer_name: string = "referrer's name"

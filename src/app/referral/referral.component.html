@@ -13,9 +13,10 @@
     <h3 class="intro-title">Hi <span class="binded">{{current_user}}</span>!</h3>
     
     <div class="introduction container d-lg-flex d-md-block d-sm-block">
-        <p class="intro-letter">
+        <textarea class="intro-letter textarea-inline-control" cdkTextareaAutosize>
             
-            Your friend <span class="binded">{{referrer_name}}</span> referred you to our referral program! Join now to enjoy exclusive benefits and rewards while sharing the love with your network.
+            Your friend <span class="binded">{{referrer_name}}</span> 
+            referred you to our referral program! Join now to enjoy exclusive benefits and rewards while sharing the love with your network.
     
             Here's how it works:
     
@@ -33,7 +34,7 @@
             <span class="binded">{{company_name}}</span>
             <br>
             <a href="{{ review_link }}"><button class="btn review-link-btn">Review Link</button></a>
-        </p>
+        </textarea>
 
         <div class="intro-image-container">
             <img class="intro-image" src="{{ review_image }}" alt="">

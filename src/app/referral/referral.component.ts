@@ -11,7 +11,7 @@ export class ReferralComponent implements OnInit{
   }
   text = "Hello, I am an editable textarea. Hover and select me to see the editable textbox!"
 
-  current_user: string = "username"
+  current_user: string = "Your friend's name"
   referrer_name: string = "referrer's name"
   referral_link: string = "referral link"
   company_name: string = "company's name"

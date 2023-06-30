@@ -1,5 +1,8 @@
 body {
     overflow: hidden;
+    background-color: #eee;
+    position: relative;
+    bottom: 12px;
 }
 
 
@@ -53,13 +56,13 @@ body {
 }
 
 .binded {
-    color: rgb(238, 118, 162);
+    color: #fa9090;
 }
 
 .review-link-btn {
     margin-top: 4%;
     margin-bottom: 4%;
-    background-color: #38B6FF;
+    background-color: #202980;
     color: white;
     padding: 3%;
     border-radius: 5px;
@@ -72,8 +75,8 @@ body {
 
 .review-link-btn:hover {
     background-color: white;
-    border-color: #38B6FF;
-    color: #38B6FF;
+    border-color: #202980;
+    color: #202980;
 }
 
 .inner-container {
@@ -84,7 +87,7 @@ body {
 }
 
 .prog-detail {
-    background-color: #38B6FF;
+    background-color: #202980;
     padding: 4%;
 
     @media screen and (max-width: 990px) {
@@ -123,19 +126,20 @@ body {
 }
 
 .purchase-image-container {
-    width: 50%;
-    height: 90%;
-    position: relative;
-    bottom: 100px;
+    width: 40%;
+    height: 80%;
+    margin-right: 10%;
 
     @media screen and (max-width: 990px) {
         width: 100%;
+        margin-right: 0%;
     }
 
     @media screen and (max-width: 590px) {
         width: 100%;
         position: relative;
         top: 0px;
+        margin-right: 0%;
     }
 }
 
@@ -152,17 +156,24 @@ body {
     color: rgb(140, 140, 140);
     margin-top: 5%;
     margin-bottom: 10%;
+    line-height: 30px;
 }
 
 .purchase-btn {
-    background-color: rgb(238, 118, 162);
+    background-color: #202980;
     color: white;
     padding: 5%;
     border-radius: 50px;
 }
 
+.purchase-btn:hover {
+    background-color: white;
+    color: #202980;
+    border-color: #202980;
+}
+
 .btn-lg {
-    background-color: #38B6FF;
+    background-color: #202980;
     padding: 5%;
     color: white;
     width: 380px;
@@ -170,8 +181,8 @@ body {
 
 .btn-lg:hover {
     background-color: white;
-    border-color: #38B6FF;
-    color: #38B6FF;
+    border-color: #202980;
+    color: #202980;
 }
 
 i {
@@ -179,3 +190,140 @@ i {
     bottom: 13px;
 }
 
+.contacts-list-container {
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.invitation-form {
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #202980;
+    padding: 5%;
+}
+
+.contacts-list-container {
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-bottom: 10%;
+}
+
+.invite-description {
+    width: 90%;
+}
+
+.invite-title {
+    color: rgb(230, 226, 226);
+
+    @media screen and (max-width: 990px) {
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+}
+
+.invite-sub {
+    color: rgb(230, 226, 226);
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.cover-letter {
+    width: 50%;
+    color: rgb(230, 226, 226);
+    font-size: 15px;
+    line-height: 30px;
+
+    @media screen and (max-width: 990px) {
+        width: 100%;
+    }
+
+}
+
+.contacts {
+    padding: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #eee;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    position: relative;
+    bottom: 50px;
+
+    @media screen and (max-width: 990px) {
+        position: relative;
+        top: 10px;
+    }
+
+}
+
+.contact-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: #7d7d7d solid 1px;
+    padding: 2%;
+}
+
+.contact-name {
+    color: #202980;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.contact-number {
+    color: #7d7d7d;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.invite-btn {
+    background-color: #202980;
+    width: 100px;
+    height: 50px;
+    color: white;
+}
+
+.invite-btn:hover {
+    background-color: #eee;
+    color: #202980;
+    border-color: #202980;
+}
+
+.purchase-title {
+    color: #202980;
+}
+
+.contacts-title {
+    color: #202980;
+    margin-left: .5%;
+}
+
+.span-number {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.social-links {
+
+    list-style: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-img {
+    width: 50px;
+    height: 50px;
+
+    @media screen and (max-width: 990px) {
+        width: 24px;
+        height: 24px;
+    }
+}

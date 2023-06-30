@@ -20,7 +20,7 @@ export class HomepageComponent implements OnInit{
   personal_refers: Number = 0
   contact_number: Number = 10
   bucks_per_activation: Number = 2
-
+  referral_reward: Number = 196
   current_referrals: Number = 50
   paid_referrals: Number = 34
   days_remaining: Number = 180

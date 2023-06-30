@@ -9,96 +9,86 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <h3 class="intro-title">Hi <span class="binded" contenteditable="true">{{current_user}}</span>!</h3>
-    
-    <div class="introduction container d-lg-flex d-md-block d-sm-block">
-        <p class="intro-letter textarea-inline-control">
-            
-            Your friend <span class="binded" contenteditable="true">{{referrer_name}}</span> 
-            referred you to our referral program! Join now to enjoy exclusive benefits and rewards while sharing the love with your network.
-    
-            Here's how it works:
-    
-            Sign up using the unique referral link provided by <span class="binded" contenteditable="true">{{referrer_name}}</span>.
-            Share your referral link with friends, family, and colleagues.
-            When someone signs up or makes a purchase using your link, both you and the person you referred will receive a reward or discount.
-            Click below to create your account and start referring:
-    
-            <span class="binded" contenteditable="true">{{referral_link}}</span>
-    
-            If you have any questions, feel free to reach out to our support team.
-    
-            Welcome aboard!
-            
-            <span class="binded" contenteditable="true">{{company_name}}</span>
-            <br>
-            <a href="{{ review_link }}"><button class="btn review-link-btn">Review Link</button></a>
-        </p>
 
-        <div class="intro-image-container">
-            <img class="intro-image" src="{{ review_image }}" alt="">
-        </div>
+  <div class="invitation-form d-lg-flex d-md-block d-sm-block">
+
+    <div class="invite-description">
+      <h3 class="invite-title">Get a <span class="span-number">${{ referral_credit }}</span> Bonus By Inviting Your Friends!</h3>
+      <h6 class="invite-sub">When a referral is successfull, both of you get
+        $ {{ referral_credit }} into your accounts</h6>
         
-    </div>
+      <h5 class="cover-letter">Hi <span class="binded" contenteditable="true">{{current_user}}</span>!</h5>
 
-    <div class="prog-detail">
-        <h3 class="program-detail-title">Program Details</h3>
-        <div class="inner-container">
-            <div class="prog-detail-data">
-                Introducing our new referral program at <span class="binded">{{ company_name }}</span>!
-                Spread the word about our products/services and be rewarded for your support.
-                Here's how it works:
-                <ol>
-                    <li>
-                        Refer: Tell your friends, family, or colleagues about <span class="binded">{{ company_name }}</span>.
-                    </li>
-    
-                    <li>
-                        Purchase/Sign-Up: When they make a purchase or sign up,
-                        make sure they mention your name or use your unique referral code.
-                    </li>
-    
-                    <li>
-                        Rewards: You'll receive <span class="binded">{{ program_reward }}</span> for each successful referral.
-                    </li>
-    
-                    <li>
-                        Eligibility: All current customers/employees can participate.
-                        Referrals must be new customers/employees.
-                    </li>
-    
-                    <li>
-                        Verification: Referrals will be verified within <span class="binded">{{ program_period }}</span> days.
-                    </li>
-    
-                    <li>
-                        Redemption: Once verified, you'll receive instructions on how to claim your rewards.
-                    </li>
-    
-                    <li>
-                        Program Duration: The referral program runs from
-                        <span class="binded">{{ program_starting_date }}</span> to <span class="binded">{{ program_due_date }}</span>.
-                    </li>
-    
-                    <li>
-                        Thank you for your support. Refer today and start earning rewards!
-                    </li>
-    
-                    <li>
-                        For any questions, contact our customer support team at <span class="binded">{{ company_web_address }}</span>.
-                    </li>
-                </ol>
-                <span class="binded">{{ company_name }}</span>
+      <p class="cover-letter">
+        Your friend <span class="binded" contenteditable="true">{{referrer_name}}</span> 
+        referred you to our referral program!
+        Here's how it works:
+        Sign up using the unique referral link provided by 
+        <span class="binded" contenteditable="true">{{referrer_name}}</span>.
+        Share the link with your friends and when someone signs up or makes a purchase using your link,
+        both you and your friend receive a reward.
+        <span class="binded" contenteditable="true">{{referral_link}}</span>
+        <span class="binded" contenteditable="true">{{company_name}}</span>
+        <br>
+      </p>
+    </div>
+                
+  </div>
+
+  <div class="contacts">
+    <div class="row">
+      <h3 class="contacts-title">Invite Your Friends</h3>
+
+      <ul class="social-links mb-5 mt-3">
+
+        <li>
+          <a href=""><img class="social-img"  class="social-img" src="./../../assets/images/icons8-whatsapp-120.png" alt=""></a>
+        </li>
+
+        <li>
+          <a href=""><img  class="social-img" src="./../../assets/images/icons8-instagram-100.png" alt=""></a>
+        </li>
+
+        <li>
+          <a href=""><img  class="social-img" src="./../../assets/images/icons8-twitter-100.png" alt=""></a>
+        </li>
+
+        <li>
+          <a href=""><img  class="social-img" src="./../../assets/images/icons8-facebook-100.png" alt=""></a>
+        </li>
+
+        <li>
+          <a href=""><img  class="social-img" src="./../../assets/images/icons8-linkedin-120.png" alt=""></a>
+        </li>
+
+        <li>
+          <a href=""><img  class="social-img" src="./../../assets/images/icons8-telegram-100.png" alt=""></a>
+        </li>
+
+        <li>
+          <a href=""><img  class="social-img" src="./../../assets/images/icons8-sms-96 (1).png" alt=""></a>
+        </li>
+
+        <li>
+          <a href=""><img  class="social-img" src="./../../assets/images/icons8-email-100 (1).png" alt=""></a>
+        </li>
+      </ul>
+
+        <div class="col-12">
+          <div class="contact-item" *ngFor="let c of contacts">
+            <div class="contact-info">
+              <p class="contact-name">{{ c.Name }}</p>
             </div>
+              <button class="btn invite-btn">invite</button>
+          </div>
         </div>
-        
     </div>
+  </div>
 
     <div class="purchase container d-lg-flex d-md-block d-sm-block">
 
         <div class="purchase-image-container">
-            <img class="purchase-image" src="./.././../assets/images/cruise-pana.png" alt="">
+            <img class="purchase-image" src="./.././../assets/images/holiday.png" alt="">
         </div>
 
         <div class="purchase-inner-container">
@@ -181,7 +171,7 @@
                     </div>
                     <div class="col-md-8 col-lg-4 col-xl-6 d-flex align-items-center order-1 order-lg-2">
       
-                      <img src="./../../assets/images/Mobile login-bro.png"
+                      <img src="./../../assets/images/Login-rafiki.png"
                         class="img-fluid" alt="Sample image">
       
                     </div>

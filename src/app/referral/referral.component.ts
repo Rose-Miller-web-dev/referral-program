@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ReferralServiceService } from '../services/referral-service.service';
 
 @Component({
   selector: 'app-referral',
@@ -6,11 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./referral.component.scss']
 })
 export class ReferralComponent implements OnInit{
-  ngOnInit(): void {
-      
-  }
-  text = "Hello, I am an editable textarea. Hover and select me to see the editable textbox!"
 
+  contacts :any
+  ngOnInit(): void {
+      this.service.get_contacts().subscribe(res => this.contacts = res)
+      console.log(this.contacts, '#contacts')
+  }
+  
+  constructor (private service: ReferralServiceService) {}
+
+  referral_credit: Number = 7
   current_user: string = "Your friend's name"
   referrer_name: string = "referrer's name"
   referral_link: string = "referral link"

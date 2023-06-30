@@ -14,7 +14,7 @@
         <div class="hero-section d-lg-flex d-sm-block d-md-block">
             <div class="hero-data">
                 <div class="hero-title">
-                    <h2>Unlock Rewards with Locom Referral Program!</h2>
+                    <h2>Get a <span class="title-span">${{ referral_reward }}</span>  Reward with Locom Referral Program!</h2>
                 </div>
                 <div class="hero-description">
                     <p>
@@ -40,22 +40,19 @@
 
         <ul class="ref-list d-lg-flex d-md-block d-sm-block">
 
-            <li class="ref-item">
-                <img class="ref-logo" src="./../../assets/images/collaborate(1).png" alt="">
+            <li class="">
+                <p class="ref-number">{{ current_referrals }}</p>
                 <h4 class="ref-title">Current Referrals</h4>
-                <h4 class="ref-title">{{ current_referrals }}</h4>
-
                 <small>paid amount : $ {{ paid_referrals }}</small>
             </li>
 
-            <li class="ref-item">
-                <img class="ref-logo" src="./../../assets/images/hourglass(1).png" alt="">
+            <li class="">
+                <p class="ref-number">{{ days_remaining }}</p>
                 <h4 class="ref-title">Days Remaining</h4>
-                <h4 class="ref-title">{{ days_remaining }}</h4>
-                <small style="color: white;"> Lorem ipsum dolor sit amet.  </small>
             </li>
 
         </ul>
+
     </div>
 
     <div class="guide container pb-5">

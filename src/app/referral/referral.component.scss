@@ -210,7 +210,7 @@ i {
 }
 
 .invite-description {
-    width: 90%;
+    width: 78%;
 }
 
 .invite-title {
@@ -257,13 +257,22 @@ i {
 
 }
 
+.contact-row {
+    width: 30%s;
+}
+
 .contact-item {
     display: flex;
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
     align-items: center;
     justify-content: space-between;
     border-bottom: #7d7d7d solid 1px;
     padding: 2%;
+
+    @media screen and (max-width: 990px) {
+        width: 94%;
+    }
 }
 
 .contact-name {
@@ -285,7 +294,7 @@ i {
 .invite-btn {
     background-color: #202980;
     width: 100px;
-    height: 50px;
+    height: 40px;
     color: white;
 }
 
@@ -309,21 +318,46 @@ i {
     line-height: 50px;
 }
 
-.social-links {
-
-    list-style: none;
+.contact-header {
     display: flex;
-    width: 100%;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.social-img {
-    width: 50px;
-    height: 50px;
+  }
+  
+  .contacts-title {
+    flex-basis: 90%;
+    margin-bottom: 4%;
+  }
+  
+  .social-links {
+    flex-basis: 95%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-links li {
+    flex-basis: 14%;
+    text-align: center;
+  }
+  
+  .social-img {
+    transition: transform .2s;
+    width: 30px;
+    height: 30px;
+    max-width: 100%;
+    height: auto;
 
     @media screen and (max-width: 990px) {
         width: 24px;
         height: 24px;
     }
-}
+
+  }
+  
+.social-img:hover {
+    transform: scale(1.5);
+  }
+  

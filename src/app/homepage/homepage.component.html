@@ -82,7 +82,7 @@
             </ul>
 
             <div class="refer-image-container">
-                <img src="./../../assets/images/Online page-pana.png" alt="" class="refer-image">
+                <img class="refer-image" src="./../../assets/images/referguide.png">
             </div>
             
         </div>
@@ -91,46 +91,74 @@
 
     <section class="personal-refer pt-5" style="background-color: #f4f5f7;">
         <div class="container py-1">
+
+          <div class="personal-refer-title">Your Invitation Profile</div>
+
           <div class="row d-flex justify-content-center align-items-center">
-            <div class="col col-lg-8 mb-4">
+            <div class="col mb-4">
               <div class="card mb-3" style="border-radius: .5rem;">
                 <div class="row g-0">
-                  <div class="col-md-4 gradient-custom text-center text-white">
+
+                  <div class="col-md-4 gradient-custom text-center text-white pb-5">
                     <img src="{{ current_user_profile }}" 
-                      alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
-                    <h5>{{ current_user_username }}</h5>
-                    <br>
-                    <h5>{{ current_user_referral_num }} Reffers</h5>
+                      alt="profile" class="img-fluid my-5" style="width: 80px;" />
+                    <h4>{{ current_user_username }}</h4>
                   </div>
+
                   <div class="col-md-8">
-                    <div class="card-body p-4">
-                      <h6 style="color: #38B6FF;">Information</h6>
-                      <hr class="mt-0 mb-4">
-                      <div class="row pt-1">
-                        <div class="col-6 mb-3">
-                          <h6 style="color: #38B6FF;">Email</h6>
-                          <p class="text-muted">{{ current_user_email }}</p>
-                        </div>
-                        <div class="col-6 mb-3">
-                          <h6 style="color: #38B6FF;">Phone</h6>
-                          <p class="text-muted">123 456 789</p>
+
+                    <div class="user-info d-lg-flex d-md-block d-sm-block">
+                      <div class="user-filed-wrapper earned">
+                        <div class="user-field">
+                          <p class="user-filed-o">$ {{ current_user_earned }}</p>
+                      
+                          <span class="user-filed-sub">earned</span>
                         </div>
                       </div>
-                      <h6 style="color: #38B6FF;">Social Media</h6>
-                      <hr class="mt-0 mb-4">
-                      <div class="row socail-sec">
-                        <div class="col-12">
-                            <a class="social-link" href=""><img src="./../../assets/images/icons8-instagram-500.png" alt=""></a>
-                            <a class="social-link" href=""><img src="./../../assets/images/icons8-facebook-500.png" alt=""></a>
-                            <a class="social-link" href=""><img src="./../../assets/images/icons8-twitter-500.png" alt=""></a>
-                            <a class="social-link" href=""><img src="./../../assets/images/icons8-linkedin-500.png" alt=""></a>
-                            <a class="social-link" href=""><img src="./../../assets/images/icons8-email-100.png" alt=""></a>
-                            <a class="social-link" href=""><img src="./../../assets/images/icons8-sms-96.png" alt=""></a>
-                            <a class="social-link" href=""><img src="./../../assets/images/icons8-pinterest-500.png" alt=""></a>
+
+                      <div class="user-filed-wrapper referrals">
+                        <div class="user-field">
+                          <p class="user-filed-o">{{ current_user_referral_num }}</p>
                         </div>
+                        
+                        <span class="user-filed-sub">referrals</span>
                       </div>
+
+                      <div class="user-filed-wrapper pending">
+                        <div class="user-field">
+                        <p class="user-filed-o">{{ current_user_pending }}</p>
+                        </div>
+                        <span class="user-filed-sub">pending</span>
+                      </div>
+
                     </div>
+
+                    <ul class="social-links mb-5 mt-3">
+
+                      <li class="social-wrapper">
+                        <a href=""><img class="social-img"  class="social-img" src="./../../assets/images/icons8-whatsapp-120.png" alt=""></a>
+                        
+                        <a href=""><img  class="social-img" src="./../../assets/images/icons8-instagram-100.png" alt=""></a>
+                        
+                        <a href=""><img  class="social-img" src="./../../assets/images/icons8-twitter-100.png" alt=""></a>
+                        
+                        <a href=""><img  class="social-img" src="./../../assets/images/icons8-facebook-100.png" alt=""></a>
+                      </li>
+                          
+                      <li class="social-wrapper">
+                        <a href=""><img  class="social-img" src="./../../assets/images/icons8-linkedin-120.png" alt=""></a>
+                      
+                        <a href=""><img  class="social-img" src="./../../assets/images/icons8-telegram-100.png" alt=""></a>
+                     
+                        <a href=""><img  class="social-img" src="./../../assets/images/icons8-sms-96 (1).png" alt=""></a>
+                                              
+                        <a href=""><img  class="social-img" src="./../../assets/images/icons8-email-100 (1).png" alt=""></a>
+                      </li>
+                                          
+                    </ul>
+
                   </div>
+
                 </div>
               </div>
             </div>

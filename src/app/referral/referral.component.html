@@ -16,7 +16,7 @@
       <h3 class="invite-title">Get a <span class="span-number">${{ referral_credit }}</span> Bonus By Inviting Your Friends!</h3>
       <h6 class="invite-sub">When a referral is successfull, both of you get
         $ {{ referral_credit }} into your accounts</h6>
-        
+
       <h5 class="cover-letter">Hi <span class="binded" contenteditable="true">{{current_user}}</span>!</h5>
 
       <p class="cover-letter">
@@ -36,45 +36,48 @@
   </div>
 
   <div class="contacts">
-    <div class="row">
-      <h3 class="contacts-title">Invite Your Friends</h3>
+    <div class="contact-row row">
+      <div class="contact-header">
+        <h3 class="contacts-title">Invite Your Friends</h3>
 
-      <ul class="social-links mb-5 mt-3">
+        <ul class="social-links mb-5 mt-3">
+  
+          <li>
+            <a href=""><img class="social-img"  class="social-img" src="./../../assets/images/icons8-whatsapp-120.png" alt=""></a>
+          </li>
+  
+          <li>
+            <a href=""><img  class="social-img" src="./../../assets/images/icons8-instagram-100.png" alt=""></a>
+          </li>
+  
+          <li>
+            <a href=""><img  class="social-img" src="./../../assets/images/icons8-twitter-100.png" alt=""></a>
+          </li>
+  
+          <li>
+            <a href=""><img  class="social-img" src="./../../assets/images/icons8-facebook-100.png" alt=""></a>
+          </li>
+  
+          <li>
+            <a href=""><img  class="social-img" src="./../../assets/images/icons8-linkedin-120.png" alt=""></a>
+          </li>
+  
+          <li>
+            <a href=""><img  class="social-img" src="./../../assets/images/icons8-telegram-100.png" alt=""></a>
+          </li>
+  
+          <li>
+            <a href=""><img  class="social-img" src="./../../assets/images/icons8-sms-96 (1).png" alt=""></a>
+          </li>
+  
+          <li>
+            <a href=""><img  class="social-img" src="./../../assets/images/icons8-email-100 (1).png" alt=""></a>
+          </li>
+        </ul>
 
-        <li>
-          <a href=""><img class="social-img"  class="social-img" src="./../../assets/images/icons8-whatsapp-120.png" alt=""></a>
-        </li>
-
-        <li>
-          <a href=""><img  class="social-img" src="./../../assets/images/icons8-instagram-100.png" alt=""></a>
-        </li>
-
-        <li>
-          <a href=""><img  class="social-img" src="./../../assets/images/icons8-twitter-100.png" alt=""></a>
-        </li>
-
-        <li>
-          <a href=""><img  class="social-img" src="./../../assets/images/icons8-facebook-100.png" alt=""></a>
-        </li>
-
-        <li>
-          <a href=""><img  class="social-img" src="./../../assets/images/icons8-linkedin-120.png" alt=""></a>
-        </li>
-
-        <li>
-          <a href=""><img  class="social-img" src="./../../assets/images/icons8-telegram-100.png" alt=""></a>
-        </li>
-
-        <li>
-          <a href=""><img  class="social-img" src="./../../assets/images/icons8-sms-96 (1).png" alt=""></a>
-        </li>
-
-        <li>
-          <a href=""><img  class="social-img" src="./../../assets/images/icons8-email-100 (1).png" alt=""></a>
-        </li>
-      </ul>
-
-        <div class="col-12">
+      </div>
+      
+        <div class="contact-loop col-12">
           <div class="contact-item" *ngFor="let c of contacts">
             <div class="contact-info">
               <p class="contact-name">{{ c.Name }}</p>

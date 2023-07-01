@@ -32,6 +32,8 @@ export class HomepageComponent implements OnInit{
   current_user_profile: string = "./../../assets/images/icons8-user-96.png"
   current_user_username: string = "username"
   current_user_referral_num: Number = 12
+  current_user_earned: Number = 324
+  current_user_pending: Number = 15
   current_user_email: string = "user@gmail.con"
 
 }

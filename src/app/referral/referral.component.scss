@@ -215,10 +215,13 @@ i {
 
 .invite-title {
     color: rgb(230, 226, 226);
+    margin-bottom: 4%;
+    margin-top: 0%;
 
     @media screen and (max-width: 990px) {
-        margin-top: 4%;
-        margin-bottom: 4%;
+        margin-top: 6%;
+        margin-bottom: 6%;
+        line-height: 40px;
     }
 }
 
@@ -226,16 +229,20 @@ i {
     color: rgb(230, 226, 226);
     font-size: 14px;
     line-height: 30px;
+
+    @media screen and (max-width: 990px) {
+        display: none;
+    }
 }
 
 .cover-letter {
-    width: 50%;
+    width: 90%;
     color: rgb(230, 226, 226);
-    font-size: 15px;
+    font-size: 16px;
     line-height: 30px;
 
     @media screen and (max-width: 990px) {
-        width: 100%;
+        width: 120%;
     }
 
 }
@@ -252,7 +259,7 @@ i {
 
     @media screen and (max-width: 990px) {
         position: relative;
-        top: 10px;
+        bottom: 20px;
     }
 
 }

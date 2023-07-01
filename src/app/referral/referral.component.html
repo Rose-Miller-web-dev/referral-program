@@ -13,21 +13,17 @@
   <div class="invitation-form d-lg-flex d-md-block d-sm-block">
 
     <div class="invite-description">
-      <h3 class="invite-title">Get a <span class="span-number">${{ referral_credit }}</span> Bonus By Inviting Your Friends!</h3>
+      <h2 class="invite-title">Get a <span class="span-number">${{ referral_credit }}</span> Bonus By Inviting Your Friends!</h2>
       <h6 class="invite-sub">When a referral is successfull, both of you get
         $ {{ referral_credit }} into your accounts</h6>
-
-      <h5 class="cover-letter">Hi <span class="binded" contenteditable="true">{{current_user}}</span>!</h5>
 
       <p class="cover-letter">
         Your friend <span class="binded" contenteditable="true">{{referrer_name}}</span> 
         referred you to our referral program!
-        Here's how it works:
-        Sign up using the unique referral link provided by 
-        <span class="binded" contenteditable="true">{{referrer_name}}</span>.
         Share the link with your friends and when someone signs up or makes a purchase using your link,
         both you and your friend receive a reward.
         <span class="binded" contenteditable="true">{{referral_link}}</span>
+        &nbsp;
         <span class="binded" contenteditable="true">{{company_name}}</span>
         <br>
       </p>

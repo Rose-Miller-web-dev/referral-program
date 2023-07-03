@@ -1,5 +1,6 @@
 body{
     overflow: hidden;
+    font-family: DM Sans,sans-serif;
 }
 
 .hero-section {
@@ -10,7 +11,7 @@ body{
 }
 
 .hero-description {
-    color: rgb(140, 139, 139);
+    color: #02043b;
     font-size: 15px;
     line-height: 30px;
 }
@@ -29,8 +30,10 @@ body{
     }
 }
 
-.hero-title {
+.hero-title h1{
+    color: #02043b;
     margin-bottom: 5%;
+    font-weight: bolder;
 }
 
 .title-span {
@@ -57,7 +60,7 @@ body{
 }
 
 .cta {
-    background-color: #202980;
+    background-color: rgb(59 130 246);
     color: white;
     border-radius: 50px;
     padding: 4%;
@@ -66,8 +69,8 @@ body{
 
 .cta:hover {
     background-color: white;
-    color: #202980;
-    border-color: #202980;
+    color: rgb(59 130 246);
+    border-color: rgb(59 130 246);
 }
 
 body::-webkit-scrollbar {
@@ -75,11 +78,11 @@ body::-webkit-scrollbar {
 }
 
 .refer-program-container {
-    background-color: #202980;
+    background-color: #eee;
     padding: 5%;
     padding-left: 0%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 
     @media screen and (max-width: 990px) {
         padding-top: 5%;
@@ -88,7 +91,8 @@ body::-webkit-scrollbar {
 }
 
 .ref-prog-title {
-    color: white;
+    color: #02043b;
+    font-weight: bolder;
     margin-left: 15%;
     margin-bottom: 5%;
 
@@ -105,13 +109,22 @@ body::-webkit-scrollbar {
 
 .refer-guide-title {
     margin-left: 2.5%;
-    color: #202980;
+    color: #02043b;
+    font-weight: bolder;
 
     @media screen and (max-width: 990px) {
         margin-left: 8%;
         margin-top: 15%;
         margin-bottom: 10%;
     }
+}
+
+.refer-guide-subtitle {
+    color: #02043b;
+    font-weight: bold;
+    width: 50%;
+    margin-left: 2.5%;
+    margin-top: 2rem;
 }
 
 .ref-list {
@@ -134,7 +147,7 @@ body::-webkit-scrollbar {
 }
 
 .ref-item h4 {
-    color: #202980;
+    color: rgb(59 130 246);
 }
 
 .ref-logo {
@@ -164,7 +177,7 @@ body::-webkit-scrollbar {
 
 .ref-title {
     margin-top: 25%;
-    color: white;
+    
 
     @media screen and (max-width: 990px) {
         margin-top: 10%;
@@ -210,15 +223,16 @@ small {
 
 .guide-title {
     color: #267dff;
+    font-weight: bold;
+    width: fit-content;
 }
 
 .guide-item {
-    border-radius: 10px;
-    border-color: rgb(182, 182, 182);
-    border-style: solid;
+    
+    // border-width: 1px;
+    // border-style: solid;
     padding: 3%;
     margin-top: 2%;
-    border-width: 1px;
 
     @media screen and (max-width: 990px) {
         margin-top: 5%;
@@ -227,12 +241,13 @@ small {
 }
 
 .lead {
-    color: rgb(117, 135, 135);
-    font-size: 14px;
+    color: #02043b;
+    font-size: 16px;
+    line-height: 30px;
 }
 
 .personal-form {
-    background-color: #202980;
+    background-color: rgb(59 130 246);
     padding: 5%;
     margin-top: 5%;
     align-items: center;
@@ -248,14 +263,14 @@ small {
 
 .down-cta {
     background-color: white;
-    color: #202980;
+    color: rgb(59 130 246);
     border-radius: 10px;
     padding: 1%;
     margin-top: 5%;
 }
 
 .down-cta:hover {
-    background-color: #202980;
+    background-color: rgb(59 130 246);
     color: white;
     border-color: white;
 }
@@ -272,15 +287,12 @@ small {
 }
 
 .gradient-custom {
-    /* fallback for old browsers */
-    background: rgb(27, 27, 66);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(49,49,166,1) 0%, rgba(51,191,219,1) 100%);
     
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right bottom, rgb(168, 181, 255), 	#267dff);
     
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right bottom, rgb(168, 181, 255), 	#267dff);
-    border-top-left-radius: .5rem; 
+    
+    
     border-bottom-left-radius: .5rem;
 
     @media screen and (max-width: 990px) {
@@ -329,16 +341,43 @@ small {
   }
   
   .ref-number {
+    color: white;
     font-size: 75px;
     font-weight: 700;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    color: #202980;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .header-sub {
+    color: #eee;
+  }
+
+  .card-header {
+    padding: 2%;
+  }
+
+  .card {
+    width: 25%;
+    -webkit-box-shadow: -14px 14px 21px -5px rgba(217,208,217,1);
+    -moz-box-shadow: -14px 14px 21px -5px rgba(217,208,217,1);
+    box-shadow: -14px 14px 21px -5px rgba(217,208,217,1);
+  }
+
+  .card-body {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: start;
+    display: block;
+  }
+
+  .card-cta {
+    text-decoration: none;
+    color: #02043b;
+    font-size: 12px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 10px;
   }
   
   @media (max-width: 992px) {
@@ -356,7 +395,7 @@ small {
   
 
 .personal-refer-title {
-    color: #202980;
+    color: rgb(59 130 246);
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 4%;
@@ -366,7 +405,7 @@ small {
     font-size: 35px;
     font-weight: 600;
     text-align: center;
-    color: #202980;
+    color: rgb(59 130 246);
 }
 
 .user-info {
@@ -394,14 +433,7 @@ small {
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
-
-    @media (max-width: 1283px) {
-        width: 90%;
-    }
-
-    @media (max-width: 1091px) {
-        width: 100%;
-    }
+    width: 94%;
   }
   
   .social-wrapper {
@@ -422,7 +454,7 @@ small {
   }
 
   .button-wrapper .btn {
-    background-color: #202980;
+    background-color: rgb(59 130 246);
     color: white;
     width: 70%;
     height: 62px;
@@ -457,17 +489,90 @@ small {
   .social-img:hover {
     transform: scale(1.5);
   }
-  
-.profile-bottom {
-    display: flex;
-
-    @media screen and (max-width: 1168px) {
-        display: block;
-    }
-}
 
 .button-wrapper .btn:hover {
     background-color: white;
-    color: #202980;
-    border-color: #202980;
+    color: rgb(59 130 246);
+    border-color: rgb(59 130 246);
+}
+
+.track-btn {
+    padding: 5%;
+    border-radius: 50px;
+    position: relative;
+    bottom: 13%;
+    color: white;
+}
+
+.track-btn:hover {
+    color: rgb(59 130 246);
+}
+
+.guide-text {
+    display: flex;
+}
+
+.tick {
+    margin-top: .3rem;
+    margin-right: .2rem;
+    width: 20px;
+    height: 20px;
+}
+
+.profile-container {
+    padding: 5%;
+    width: 100%;
+    background-color: #eee;
+}
+
+.user-card {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.card-header {
+    width: 100%;
+    background-color: #267dff;
+}
+
+.username-title {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.user-picture-container {
+    width: 100%;
+}
+
+.user-picture {
+    width: 20%;
+    height: 20%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+}
+
+.user-info-list {
+    padding: 5%;
+    list-style: none;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.user-info-list li {
+    margin: 5%;
+}
+
+.user-ref {
+    font-weight: bold;
+    color: #267dff;
+}
+
+.user-info-sub {
+    color: #9e9d9d;
+}
+
+.card-footer {
+    padding-top: 1.5rem;
 }

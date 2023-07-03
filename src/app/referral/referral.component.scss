@@ -3,8 +3,8 @@ body {
     background-color: #eee;
     position: relative;
     bottom: 12px;
+    font-family: DM Sans,sans-serif;
 }
-
 
 .intro-title {
     margin: 3%;
@@ -62,7 +62,7 @@ body {
 .review-link-btn {
     margin-top: 4%;
     margin-bottom: 4%;
-    background-color: #202980;
+    background-color: #267dff;
     color: white;
     padding: 3%;
     border-radius: 5px;
@@ -75,8 +75,8 @@ body {
 
 .review-link-btn:hover {
     background-color: white;
-    border-color: #202980;
-    color: #202980;
+    border-color: #267dff;
+    color: #267dff;
 }
 
 .inner-container {
@@ -87,7 +87,7 @@ body {
 }
 
 .prog-detail {
-    background-color: #202980;
+    background-color: #267dff;
     padding: 4%;
 
     @media screen and (max-width: 990px) {
@@ -160,7 +160,7 @@ body {
 }
 
 .purchase-btn {
-    background-color: #202980;
+    background-color: #267dff;
     color: white;
     padding: 5%;
     border-radius: 50px;
@@ -168,12 +168,12 @@ body {
 
 .purchase-btn:hover {
     background-color: white;
-    color: #202980;
-    border-color: #202980;
+    color: #267dff;
+    border-color: #267dff;
 }
 
 .btn-lg {
-    background-color: #202980;
+    background-color: #267dff;
     padding: 5%;
     color: white;
     width: 380px;
@@ -181,8 +181,8 @@ body {
 
 .btn-lg:hover {
     background-color: white;
-    border-color: #202980;
-    color: #202980;
+    border-color: #267dff;
+    color: #267dff;
 }
 
 i {
@@ -198,7 +198,7 @@ i {
 .invitation-form {
     align-items: center;
     justify-content: space-evenly;
-    background-color: #202980;
+    background-color: white;
     padding: 5%;
 }
 
@@ -214,9 +214,10 @@ i {
 }
 
 .invite-title {
-    color: rgb(230, 226, 226);
+    color: #267dff;
     margin-bottom: 4%;
     margin-top: 0%;
+    font-weight: bolder;
 
     @media screen and (max-width: 990px) {
         margin-top: 6%;
@@ -283,7 +284,7 @@ i {
 }
 
 .contact-name {
-    color: #202980;
+    color: #267dff;
     font-weight: 600;
     line-height: 30px;
 }
@@ -299,7 +300,7 @@ i {
 }
 
 .invite-btn {
-    background-color: #202980;
+    background-color: #267dff;
     width: 100px;
     height: 40px;
     color: white;
@@ -307,16 +308,17 @@ i {
 
 .invite-btn:hover {
     background-color: #eee;
-    color: #202980;
-    border-color: #202980;
+    color: #267dff;
+    border-color: #267dff;
 }
 
 .purchase-title {
-    color: #202980;
+    color: #267dff;
+    font-weight: bolder;
 }
 
 .contacts-title {
-    color: #202980;
+    color: #267dff;
     margin-left: .5%;
 }
 
@@ -369,8 +371,9 @@ i {
   }
   
 .program-details-container {
-    background-color: #202980;
-    padding: 4%;
+    background-color: #267dff;
+    padding: 5%;
+    padding-bottom: 3%;
 }
 
 .program-details-title {
@@ -378,11 +381,14 @@ i {
     color: white;
     font-weight: 500;
     line-height: 40px;
-    margin: 2rem;
+    margin: 1rem;
+    font-weight: bolder;
 }
 
 .program-details-list {
     list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .program-details-list li {
@@ -391,9 +397,14 @@ i {
     font-weight: 300;
     line-height: 30px;
     margin: .6rem;
+    width: 15%;
 }
 
 .list-number {
     font-weight: 700;
     color: #fa9090;
+}
+
+.register-btn {
+    background-color: #267dff;
 }

@@ -8,7 +8,7 @@ img {
   }
   
   .navbar {
-     background-color: #202980;
+     background-color: rgb(59 130 246);
   }
 
   .logo {
@@ -22,7 +22,7 @@ img {
   
   .nav-link {
     margin-right: 24px;
-    font-family: Helvetica;
+    font-family: DM Sans,sans-serif;
     font-size: 16px;
     color: black;
     cursor: pointer;
@@ -37,20 +37,21 @@ img {
     width: 79px;
     padding-right: 8px;
     padding-left: 8px;
-    font-family: Helvetica;
+    font-family: DM Sans,sans-serif;
     font-size: 16px;
   }
   
   .signup {
-    background-color: #202980;
+    background-color: rgb(59 130 246);
     color: white;
     margin-right: 24px;
+    border-radius: 30px;
   }
   
   .signup:hover {
     background-color: white;
-    color: #202980;
-    border-color: #202980;
+    color: rgb(59 130 246);
+    border-color: rgb(59 130 246);
   }
   
   .signup:active {
@@ -59,12 +60,13 @@ img {
   }
   
   .login {
-    border-color: #202980;
-    color: #202980;
+    border-color: rgb(59 130 246);
+    color: rgb(59 130 246);
+    border-radius: 30px;
   }
   
   .login:hover {
-    background-color: #202980;
+    background-color: rgb(59 130 246);
     color: white;
   }
   
@@ -126,7 +128,7 @@ img {
   }
   
   .modal-title {
-    color: #202980;
+    color: rgb(59 130 246);
     font-weight: 700;
   }
   
@@ -138,7 +140,7 @@ img {
   }
   
   .modal-login {
-    background-color: #202980;
+    background-color: rgb(59 130 246);
     color: white;
     position: relative;
     margin-bottom: 15px;
@@ -146,8 +148,8 @@ img {
   
   .modal-login:hover {
     background-color: white;
-    color: #202980;
-    border-color: #202980;
+    color: rgb(59 130 246);
+    border-color: rgb(59 130 246);
   }
   
   a {

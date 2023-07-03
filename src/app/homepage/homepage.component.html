@@ -14,7 +14,7 @@
         <div class="hero-section d-lg-flex d-sm-block d-md-block">
             <div class="hero-data">
                 <div class="hero-title">
-                    <h2>Get a <span class="title-span">${{ referral_reward }}</span>  Reward with Locom Referral Program!</h2>
+                    <h1>Get a &nbsp;<span class="title-span">${{ referral_reward }}</span>&nbsp;&nbsp;Reward with Locom Referral Program!</h1>
                 </div>
                 <div class="hero-description">
                     <p>
@@ -29,26 +29,45 @@
                 <button routerLink="referral" class="btn cta">Invite Your Friends</button>
             </div>
 
-            <img class="hero-image" src="./../../assets/images/65Z_2112.w009.n001.69C.p6.69.jpg" alt="">
+            <img class="hero-image" src="" alt="">
         </div>
     </div>
 
     <div class="refer-program-container">
-        <h2 class="ref-prog-title">
+        <h1 class="ref-prog-title">
             Current Referral Program
-        </h2>
+        </h1>
 
         <ul class="ref-list d-lg-flex d-md-block d-sm-block">
 
-            <li class="">
+            <li class="card">
+              <div class="card-header gradient-custom py-4">
                 <p class="ref-number">{{ current_referrals }}</p>
-                <h4 class="ref-title">Current Referrals</h4>
-                <small>paid amount : $ {{ paid_referrals }}</small>
+                <h4 class="header-sub">Current Referrals</h4>
+              </div>
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Dolor veniam tenetur reprehenderit ea vitae non iure nihil dolorem repellendus atque!
+                  <br>
+                  <a href="" class="card-cta">
+                    Create Referral
+                  </a>
+                </div>
             </li>
 
-            <li class="">
+            <li class="card">
+              <div class="card-header gradient-custom py-4">
                 <p class="ref-number">{{ days_remaining }}</p>
-                <h4 class="ref-title">Days Remaining</h4>
+                <h4 class="header-sub">Days Remaining</h4>
+              </div>
+              <div class="card-body">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolor veniam tenetur reprehenderit ea vitae non iure nihil dolorem repellendus atque!
+                <br>
+                <a href="" class="card-cta">
+                  Create Referral
+                </a>
+              </div>
             </li>
 
         </ul>
@@ -56,7 +75,7 @@
     </div>
 
     <div class="guide container pb-5">
-        <h3 class="refer-guide-title">How To Refer a Friend</h3>
+        <h2 class="refer-guide-title">How To Refer a Friend</h2>
 
         <div class="inner-guide-conyainer d-lg-flex d-md-block d-sm-block">
             <ul class="guide-list">
@@ -64,120 +83,115 @@
                 <li class="guide-item">
                     <img src="" alt="">
                     <h4 class="guide-title">Sign in to Locom</h4>
-                    <p class="lead">{{ guide_1 }}</p>
+                    <div class="guide-text">
+                      <img class="tick" src="./../../assets/images/icons8-tick-100.png" alt="">
+                      <p class="lead">{{ guide_1 }}</p>
+                    </div>
                 </li>
 
                 <li class="guide-item">
                     <img src="" alt="">
                     <h4 class="guide-title">Refer a friend</h4>
-                    <p class="lead">{{ guide_2 }}</p>
+                    <div class="guide-text">
+                      <img class="tick" src="./../../assets/images/icons8-tick-100.png" alt="">
+                      <p class="lead">{{ guide_2 }}</p>
+                    </div>
                 </li>
 
                 <li class="guide-item">
                     <img src="" alt="">
                     <h4 class="guide-title">Watch your inbox</h4>
-                    <p class="lead">{{ guide_3 }}</p>
+                    <div class="guide-text">
+                      <img class="tick" src="./../../assets/images/icons8-tick-100.png" alt="">
+                      <p class="lead">{{ guide_3 }}</p>
+                    </div>
+                    
                 </li>
     
             </ul>
 
             <div class="refer-image-container">
-                <img class="refer-image" src="./../../assets/images/referguide.png">
+                <img class="refer-image" src="">
             </div>
             
         </div>
        
     </div>
 
-    <section class="personal-refer pt-5" style="background-color: #f4f5f7;">
-        <div class="container py-1">
+    <section class="profile-container">
+      <div class="card user-card">
+        <div class="card-header">
 
-          <div class="personal-refer-title">Your Invitation Profile</div>
-
-          <div class="row d-flex justify-content-center align-items-center">
-            <div class="col mb-4">
-              <div class="card mb-3" style="border-radius: .5rem;">
-                <div class="row g-0">
-
-                  <div class="col-md-4 gradient-custom text-center text-white pb-5">
-                    <img src="{{ current_user_profile }}" 
-                      alt="profile" class="img-fluid my-5" style="width: 80px;" />
-                    <h4>{{ current_user_username }}</h4>
-                  </div>
-
-                  <div class="col-md-8">
-
-                    <div class="user-info d-lg-flex d-md-block d-sm-block">
-                      <div class="user-filed-wrapper earned">
-                        <div class="user-field">
-                          <p class="user-filed-o">$ {{ current_user_earned }}</p>
-                      
-                          <span class="user-filed-sub">earned</span>
-                        </div>
-                      </div>
-
-                      <div class="user-filed-wrapper referrals">
-                        <div class="user-field">
-                          <p class="user-filed-o">{{ current_user_referral_num }}</p>
-                        </div>
-                        
-                        <span class="user-filed-sub">referrals</span>
-                      </div>
-
-                      <div class="user-filed-wrapper pending">
-                        <div class="user-field">
-                        <p class="user-filed-o">{{ current_user_pending }}</p>
-                        </div>
-                        <span class="user-filed-sub">pending</span>
-                      </div>
-
-                    </div>
-
-                    <div class="profile-bottom">
-
-                      <ul class="social-links mb-5 mt-3">
-
-                        <li class="social-wrapper">
-                          <a href=""><img class="social-img"  class="social-img" src="./../../assets/images/icons8-whatsapp-120.png" alt=""></a>
-                          
-                          <a href=""><img  class="social-img" src="./../../assets/images/icons8-instagram-100.png" alt=""></a>
-                          
-                          <a href=""><img  class="social-img" src="./../../assets/images/icons8-twitter-100.png" alt=""></a>
-                          
-                          <a href=""><img  class="social-img" src="./../../assets/images/icons8-facebook-100.png" alt=""></a>
-                        </li>
-                            
-                        <li class="social-wrapper">
-                          <a href=""><img  class="social-img" src="./../../assets/images/icons8-linkedin-120.png" alt=""></a>
-                        
-                          <a href=""><img  class="social-img" src="./../../assets/images/icons8-telegram-100.png" alt=""></a>
-                       
-                          <a href=""><img  class="social-img" src="./../../assets/images/icons8-sms-96 (1).png" alt=""></a>
-                                                
-                          <a href=""><img  class="social-img" src="./../../assets/images/icons8-email-100 (1).png" alt=""></a>
-                        </li>
-                                            
-                      </ul>
-
-                      <div class="button-wrapper d-block">
-                        <a href="http://voyagescope.com"><button class="btn vacation-btn">
-                          Reserve Vacation
-                        </button></a>
-  
-                        <button routerLink="referral" class="btn track-btn">
-                          Track Referral
-                        </button>
-                      </div>
-                    </div>
-                                        
-                  </div>
-
-                </div>
-              </div>
-            </div>
+          <div class="user-picture-container">
+            <img class="user-picture" src="./../../assets/images/icons8-user-96.png" alt="">
           </div>
+
+          <div class="user-username">
+            <h4 class="username-title">username</h4>
+          </div>
+
         </div>
-      </section>
+
+        <div class="card-body">
+          <ul class="user-info-list d-lg-flex d-md-block d-sm-block">
+            <li>
+              <h1 class="user-ref">12</h1>
+              <p class="user-info-sub">Referrals</p>
+            </li>
+
+            <li>
+              <h1 class="user-ref">12</h1>
+              <p class="user-info-sub">Earned</p>
+            </li>
+
+            <li>
+              <h1 class="user-ref">12</h1>
+              <p class="user-info-sub">Pending</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card-footer">
+          <ul class="social-links">
+            <li>
+              <a href=""><img class="social-img"  class="social-img" src="./../../assets/images/icons8-whatsapp-120.png" alt=""></a>
+            </li>
+    
+            <li>
+              <a href=""><img  class="social-img" src="./../../assets/images/icons8-instagram-100.png" alt=""></a>
+            </li>
+    
+            <li>
+              <a href=""><img  class="social-img" src="./../../assets/images/icons8-twitter-100.png" alt=""></a>
+            </li>
+    
+            <li>
+              <a href=""><img  class="social-img" src="./../../assets/images/icons8-facebook-100.png" alt=""></a>
+            </li>
+    
+            <li>
+              <a href=""><img  class="social-img" src="./../../assets/images/icons8-linkedin-120.png" alt=""></a>
+            </li>
+    
+            <li>
+              <a href=""><img  class="social-img" src="./../../assets/images/icons8-telegram-100.png" alt=""></a>
+            </li>
+    
+            <li>
+              <a href=""><img  class="social-img" src="./../../assets/images/icons8-sms-96 (1).png" alt=""></a>
+            </li>
+    
+            <li>
+              <a href=""><img  class="social-img" src="./../../assets/images/icons8-email-100 (1).png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="reservation-serction">
+      
+    </div>
 
 </body>
 

@@ -34,8 +34,11 @@
     </div>
 
     <div class="refer-program-container">
+        <p class="refer-prog-pretext ">
+          How it's going at Locom?
+        </p>
         <h1 class="ref-prog-title">
-            Current Referral Program
+          Omnichannel, cross-lifecycle and flexible: Starts your loyalty journey  with Locom
         </h1>
 
         <ul class="ref-list d-lg-flex d-md-block d-sm-block">
@@ -46,11 +49,17 @@
                 <h4 class="header-sub">Current Referrals</h4>
               </div>
                 <div class="card-body">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Dolor veniam tenetur reprehenderit ea vitae non iure nihil dolorem repellendus atque!
-                  <br>
-                  <a href="" class="card-cta">
-                    Create Referral
+                  <h4 class="ref-prog-card-title">
+                    Make a referral!
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Dolor veniam tenetur reprehenderit ea vitae non iure nihil dolorem repellendus atque!
+                  </p>
+                  
+                 
+                  <a href="" routerLink="referral" class="card-cta">
+                    Refer Now
                   </a>
                 </div>
             </li>
@@ -61,9 +70,16 @@
                 <h4 class="header-sub">Days Remaining</h4>
               </div>
               <div class="card-body">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Dolor veniam tenetur reprehenderit ea vitae non iure nihil dolorem repellendus atque!
-                <br>
+
+                <h4 class="ref-prog-card-title">
+                  Only {{ days_remaining }} away!
+                </h4>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Dolor veniam tenetur reprehenderit ea vitae non iure nihil dolorem repellendus atque!
+                </p>
+                
                 <a href="" class="card-cta">
                   Create Referral
                 </a>
@@ -75,52 +91,60 @@
     </div>
 
     <div class="guide container pb-5">
-        <h2 class="refer-guide-title">How To Refer a Friend</h2>
+        <p class="refer-prog-pretext">How to get started at Locom</p>
+        <h1 class="refer-guide-title">Get rewarded at Locom by referring your friends</h1>
 
-        <div class="inner-guide-conyainer d-lg-flex d-md-block d-sm-block">
-            <ul class="guide-list">
-
-                <li class="guide-item">
-                    <img src="" alt="">
-                    <h4 class="guide-title">Sign in to Locom</h4>
-                    <div class="guide-text">
-                      <img class="tick" src="./../../assets/images/icons8-tick-100.png" alt="">
-                      <p class="lead">{{ guide_1 }}</p>
-                    </div>
-                </li>
+        <div class="inner-guide-conyainer ">
+            <ul class="guide-list d-lg-flex d-md-block d-sm-block">
 
                 <li class="guide-item">
-                    <img src="" alt="">
-                    <h4 class="guide-title">Refer a friend</h4>
-                    <div class="guide-text">
-                      <img class="tick" src="./../../assets/images/icons8-tick-100.png" alt="">
-                      <p class="lead">{{ guide_2 }}</p>
-                    </div>
-                </li>
+                  
+                    <img src="./../../assets/images/icons8-user-64.png" alt="">
 
-                <li class="guide-item">
-                    <img src="" alt="">
-                    <h4 class="guide-title">Watch your inbox</h4>
-                    <div class="guide-text">
-                      <img class="tick" src="./../../assets/images/icons8-tick-100.png" alt="">
-                      <p class="lead">{{ guide_3 }}</p>
+                    <div class="guide-item-data">
+                      <h4 class="guide-title">Sign in to Locom</h4>
+                      <div class="guide-text">
+                        <p class="lead">{{ guide_1 }}</p>
+                      </div>
                     </div>
                     
                 </li>
+
+                <li class="guide-item">
+                    <img src="./../../assets/images/icons8-network-64.png" alt="">
+                    <div class="guide-item-data">
+                      <h4 class="guide-title">Refer a friend</h4>
+                      <div class="guide-text">
+                        <p class="lead">{{ guide_2 }}</p>
+                      </div>
+                    </div>
+                    
+                </li>
+
+                <li class="guide-item">
+                  <img src="./../../assets/images/icons8-user-64.png" alt="">
+                    <div class="guide-item-data">
+                      <h4 class="guide-title">Watch your inbox</h4>
+                      <div class="guide-text">
+                        <p class="lead">{{ guide_3 }}</p>
+                      </div>
+                    </div>
+                                       
+                </li>
     
             </ul>
-
-            <div class="refer-image-container">
-                <img class="refer-image" src="">
-            </div>
             
         </div>
        
     </div>
 
-    <section class="profile-container">
+    <section class="profile-container d-block">
+      <p class="refer-prog-pretext">
+        Take look at what you have earned
+      </p>
+      <h1 class="userprof-title">Invitation History at Locom</h1>
       <div class="card user-card">
-        <div class="card-header">
+        <div class="card-header gradient-custom">
 
           <div class="user-picture-container">
             <img class="user-picture" src="./../../assets/images/icons8-user-96.png" alt="">
@@ -135,17 +159,17 @@
         <div class="card-body">
           <ul class="user-info-list d-lg-flex d-md-block d-sm-block">
             <li>
-              <h1 class="user-ref">12</h1>
+              <h1 class="user-ref">52</h1>
               <p class="user-info-sub">Referrals</p>
             </li>
 
             <li>
-              <h1 class="user-ref">12</h1>
+              <h1 class="user-ref"> $ 120</h1>
               <p class="user-info-sub">Earned</p>
             </li>
 
             <li>
-              <h1 class="user-ref">12</h1>
+              <h1 class="user-ref"> $ 12</h1>
               <p class="user-info-sub">Pending</p>
             </li>
           </ul>
@@ -189,10 +213,40 @@
       </div>
     </section>
 
-    <div class="reservation-serction">
+    <div class="reservation-serction d-lg-flex d-md-block d-sm-block py-5">
+      <div class="reservation-data">
+        <p class="refer-prog-pretext">
+          Marketers
+        </p>
+        <h1 class="reserve-title">Make a Reservation Right Now!</h1>
+        <p class="reservation-par">
+          Embark on an exhilarating odyssey of boundless wonders and extraordinary experiences with Voyage.com! Unleash your wanderlust, immerse yourself in awe-inspiring destinations, and let the world unveil its captivating secrets. Reserve now and let the adventure of a lifetime beckon you towards an unforgettable voyage!
+        </p>
+
+        <button class="reserve-btn btn">Make a Reservation</button>
+      </div>
       
+      <img src="" alt="">
     </div>
+
+    <section class="track-referral-container">
+      <h1 class="track-title">Brands like Voyayge.com trust Locom to power their promotions</h1>
+      <p class="track-subtitle">
+        Book a demo to see our product in action
+      </p>
+
+      <div class="btn-container">
+        <button routerLink="referral" class="track-btn btn">Get started</button>
+      </div>
+      
+    </section>
+<!-- 
+    <mat-foem-field>
+      <input matInput>
+      <mat-datepicker-toggle matSuffix></mat-datepicker-toggle>
+      <mat-datepicker #myDatePicker></mat-datepicker>
+    </mat-foem-field> -->
 
 </body>
 
-</html>
+</html> 

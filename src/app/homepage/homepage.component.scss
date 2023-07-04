@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Merriweather+Sans&display=swap');
 body{
     overflow: hidden;
     font-family: DM Sans,sans-serif;
@@ -14,19 +18,22 @@ body{
     color: #02043b;
     font-size: 15px;
     line-height: 30px;
+
+    @media screen and (max-width: 990px) {
+        text-align: center;
+    }
 }
 
 .hero-data {
     @media screen and (min-width: 1200px) {
         width: 40%;
-        position: relative;
-        right: 7%;
     }
 
     @media screen and (max-width: 990px) {
-        width: 97%;
+        width: 90%;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 }
 
@@ -34,6 +41,12 @@ body{
     color: #02043b;
     margin-bottom: 5%;
     font-weight: bolder;
+
+    @media screen and (max-width: 990px) {
+        width: 85%;
+        margin-left: 7.5%;
+        line-height: 50px;
+    }
 }
 
 .title-span {
@@ -42,7 +55,6 @@ body{
     font-size: 50px;
 
     @media screen and (max-width: 990px) {
-        font-weight: 500;
         font-size: 40px;
     }
 }
@@ -65,6 +77,7 @@ body{
     border-radius: 50px;
     padding: 4%;
     margin-top: 5%;
+    font-weight: bold;
 }
 
 .cta:hover {
@@ -90,32 +103,50 @@ body::-webkit-scrollbar {
     }
 }
 
+.refer-prog-pretext {
+    color: #267dff;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    @media screen and (max-width: 990px) {
+        text-align: start;
+        margin-left: 10%;
+    };
+}
+
 .ref-prog-title {
     color: #02043b;
     font-weight: bolder;
     margin-left: 15%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+    width: 70%;
+    text-align: center;
+    line-height: 50px;
 
     @media screen and (max-width: 990px) {
-        text-align: center;
-        margin-left: 5%;
+        text-align: start;
+        width: 90%;
+        margin-left: 10%;
     }
 }
 
-.guide-item h4 {
-    margin-top: 1%;
-    margin-bottom: 3%;
+.ref-prog-card-title {
+    font-weight: bold;
+    color: #267dff;
 }
 
 .refer-guide-title {
     margin-left: 2.5%;
     color: #02043b;
     font-weight: bolder;
+    text-align: center;
 
     @media screen and (max-width: 990px) {
-        margin-left: 8%;
-        margin-top: 15%;
+        margin-left: 9%;
+        margin-top: 5%;
         margin-bottom: 10%;
+        text-align: start;
+        line-height: 40px;
     }
 }
 
@@ -128,10 +159,16 @@ body::-webkit-scrollbar {
 }
 
 .ref-list {
+    width: 90%;
+    margin-left: 5%;
     list-style: none;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
+    @media screen and (max-width: 990px) {
+        width: 100%;
+        margin-left: 4%;
+    }
 }
 
 .ref-item {
@@ -205,13 +242,19 @@ small {
     height: 50%;
 }
 
+.guide-image-container {
+    width: 100%;
+}
+
 .guide-icon {
     width: 25%;
     height: 25%;
 }
 
 .guide-list {
-    width: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
     list-style: none;
     margin-top: 3%;
 
@@ -222,21 +265,37 @@ small {
 }
 
 .guide-title {
-    color: #267dff;
+    color: #02043b;
     font-weight: bold;
     width: fit-content;
+    text-align: center;
+    width: 100%;
 }
 
 .guide-item {
-    
-    // border-width: 1px;
-    // border-style: solid;
     padding: 3%;
     margin-top: 2%;
+    width: 25%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
 
     @media screen and (max-width: 990px) {
-        margin-top: 5%;
-        margin-bottom: 8%;
+        width: 100%;
+        margin-top: 10%;
+    }
+}
+
+.guide-item img {
+    width: 20%;
+    height: 20%;
+    margin-left: 40%;
+    margin-bottom: 8%;
+
+    @media screen and (max-width: 990px) {
+        width: 25%;
+        height: 20%;
+        margin-left: 37.5%;
     }
 }
 
@@ -244,6 +303,8 @@ small {
     color: #02043b;
     font-size: 16px;
     line-height: 30px;
+    text-align: start;
+    text-align: center;
 }
 
 .personal-form {
@@ -335,7 +396,7 @@ small {
     display: flex;
     justify-content: space-around;
   }
-  
+
   .ref-list li {
     text-align: center;
   }
@@ -347,6 +408,7 @@ small {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
   }
 
   .header-sub {
@@ -377,7 +439,7 @@ small {
     font-size: 12px;
     background-color: aquamarine;
     border-radius: 20px;
-    padding: 10px;
+    padding: 4%;
   }
   
   @media (max-width: 992px) {
@@ -399,6 +461,14 @@ small {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 4%;
+}
+
+.userprof-title {
+    font-weight: bolder;
+    color: #02043b;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
 .user-filed-o {
@@ -510,6 +580,7 @@ small {
 
 .guide-text {
     display: flex;
+    text-align: center;
 }
 
 .tick {
@@ -525,14 +596,32 @@ small {
     background-color: #eee;
 }
 
+.profile-container .refer-prog-pretext {
+    @media screen and (max-width: 992px) {
+        width: 90%;
+        margin-left: 7%;
+    }
+    
+}
+
 .user-card {
     width: 50%;
     margin-left: 25%;
+
+    @media screen and (max-width: 992px) {
+        width: 90%;
+        margin-left: 5%;
+    }
 }
 
 .card-header {
     width: 100%;
     background-color: #267dff;
+
+    @media screen and (max-width: 992px) {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
 }
 
 .username-title {
@@ -561,18 +650,126 @@ small {
 }
 
 .user-info-list li {
-    margin: 5%;
+    margin: 4%;
+
+    @media screen and (max-width: 992px) {
+        margin-bottom: 15%;
+    }
+}
+
+.user-info-list:last-child {
+    @media screen and (max-width: 992px) {
+        margin-bottom: 0%;
+    }
 }
 
 .user-ref {
-    font-weight: bold;
-    color: #267dff;
+    font-weight: bolder;
+    text-align: center;
+    color: #02043b;
 }
 
 .user-info-sub {
-    color: #9e9d9d;
+    color: #267dff;
+    text-align: center;
 }
 
 .card-footer {
     padding-top: 1.5rem;
+}
+
+.reservation-data {
+    width: 50%;
+    padding-left: 15%;
+
+    @media screen and (max-width: 992px) {
+        width: 95%;
+        margin-left: 0;
+        padding-left: 8%;
+    }
+}
+
+.reservation-data .refer-prog-pretext {
+    text-align: start;
+
+    @media screen and (max-width: 992px) {
+        margin-left: 0%;
+    }
+}
+
+.reserve-title {
+    text-align: start;
+    font-weight: bolder;
+}
+
+.reservation-par {
+    line-height: 30px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.reserve-btn {
+    background-color: #267dff;
+    color: white;
+    padding: 3.3%;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.reserve-btn:hover {
+    background-color: white;
+    color: #267dff;
+    border-color: #267dff;
+}
+
+.track-referral-container {
+    background-color: #eee;
+    padding: 4%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: min-content;
+}
+
+.track-title {
+    width: 50%;
+    margin-left: 25%;
+    line-height: 50px;
+    font-weight: bolder;
+    text-align: center;
+
+    @media screen and (max-width: 992px) {
+        width: 100%;
+        margin-left: auto;
+    }
+}
+
+.track-subtitle {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.track-btn {
+    align-self: center;
+    width: 14%;
+    margin-left: 43%;
+    height: 62px;
+    background-color: #267dff;
+    padding: 1.4%;
+    font-weight: bold;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+
+    @media screen and (max-width: 992px) {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+
+.track-btn:hover {
+    background-color: #eee  ;
+    color: #267dff;
+    border-color: #267dff;
 }

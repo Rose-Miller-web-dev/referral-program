@@ -162,7 +162,7 @@ body {
 .purchase-btn {
     background-color: #267dff;
     color: white;
-    padding: 5%;
+    padding: 3%;
     border-radius: 50px;
 }
 
@@ -383,6 +383,7 @@ i {
     line-height: 40px;
     margin: 1rem;
     font-weight: bolder;
+    margin-left: 9%;
 }
 
 .program-details-list {
@@ -407,4 +408,55 @@ i {
 
 .register-btn {
     background-color: #267dff;
+}
+
+.form-info-wrapper {
+    display: flex;
+    margin: 5%;
+
+    label {
+        color: #267dff;
+        margin-top: 4px;
+    }
+
+    input {
+        margin-bottom: 20px;
+        margin-right: 40px;
+        margin-left: 8px;
+    }
+
+    @media screen and (max-width: 790px) {
+        display: block;
+    }
+}
+
+.reffer-form-submit {
+    background-color: #267dff;
+    padding: 2%;
+    height: 62px;
+    color: #eee;
+    box-shadow: none;
+    border-style: none;
+    border-radius: 30px;
+}
+
+.referral-title {
+    color: #2e2e2e;
+    font-weight: 600;   
+}
+
+
+.gradient-custom {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(49,49,166,1) 0%, rgba(51,191,219,1) 100%);
+}
+
+.detail-asset {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 20px;
+}
+
+.referral-form-container form {
+    padding: 0%;
 }

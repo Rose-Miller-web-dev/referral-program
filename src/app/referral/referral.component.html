@@ -10,47 +10,66 @@
 </head>
 <body>
 
-  <div class="invitation-form d-lg-flex d-md-block d-sm-block">
+  <div class="referral-form-container container my-5">
+    <h2 class="referral-title">Referral Form</h2>
+    <form action="" class="form-control my-3">
+      <div class="form-info-wrapper">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" name="name" id="" placeholder="First"  class="form-control">
 
-    <div class="invite-description">
-      <h1 class="invite-title">Get a <span class="span-number">${{ referral_credit }}</span> Bonus By Inviting Your Friends!</h1>
-      <h6 class="invite-sub">When a referral is successfull, both of you get
-        $ {{ referral_credit }} into your accounts</h6>
+        <input type="text" placeholder="Last" name="" id="" class="form-control">
 
-      <p class="cover-letter">
-        Your friend <span class="binded" contenteditable="true">{{referrer_name}}</span> 
-        referred you to our referral program!
-        Share the link with your friends and when someone signs up or makes a purchase using your link,
-        both you and your friend receive a reward.
-        <span class="binded" contenteditable="true">{{referral_link}}</span>
-        &nbsp;
-        <span class="binded" contenteditable="true">{{company_name}}</span>
-        <br>
-      </p>
-    </div>
-                
+      </div>
+
+      <div class="form-info-wrapper">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" name="email" id=""  class="form-control">
+
+        <label for="phonnumber" class="form-label">Phone</label>
+        <input type="number" name="phonnumber" id=""  class="form-control">
+
+      </div>
+
+      <div class="form-info-wrapper">
+        <label for="Date" class="form-label">Refferal Date</label>
+        <input type="date" name="date" id=""   class="form-control">
+
+      </div>
+
+      <div class="form-info-wrapper">
+        <label for="letter" class="form-label">Referral Letter</label>
+        <input type="text" name="letter" id=""  class="form-control">
+
+      </div>
+
+      <div class="form-info-wrapper">
+        <input class="reffer-form-submit" type="submit" value="Send Referral" id="" >
+
+      </div>
+
+    </form>
   </div>
 
-    <div class="program-details-container">
+  <div class="program-details-container gradient-custom">
 
     <div class="program-details-title">Program Details</div>
     <ul class="program-details-list d-lg-flex d-md-block d-md-block">
       <li>
-        <img src="" alt="">
+        <img class="detail-asset" src="./../../assets/images/icons8-referral-64.png" alt="">
         <p class="detail-container">
           A referral program rewards individuals for referring others to a product or service
         </p>
       </li>
 
       <li>
-        <img src="" alt="">
+        <img src="./../../assets/images/icons8-link-64.png" alt="" class="detail-asset">
         <p class="detail-container">
         Referrers receive a unique code or link to share with their friends
         </p>
       </li>
 
       <li>
-        <img src="" alt="">
+        <img src="./../../assets/images/icons8-coin-100.png" alt="" class="detail-asset">
         <p class="detail-container">
         When friends use the referral code or link,
         they become referred customers, and referrers earn rewards
@@ -58,7 +77,7 @@
       </li>
 
       <li>
-        <img src="" alt="">
+        <img src="./../../assets/images/icons8-loyalty-100.png" alt="" class="detail-asset">
         <p class="detail-container">
         Referral programs benefit by acquiring new customers, 
         increasing sales, and building brand loyality
@@ -68,96 +87,90 @@
 
   </div>
 
-    <div class="purchase container d-lg-flex d-md-block d-sm-block">
+  <div class="purchase-inner-container container">
+    <h3 class="purchase-title">Purchase and Win a Holiday!</h3>
 
-        <div class="purchase-image-container">
-            <img class="purchase-image" src="" alt="">
-        </div>
+    <p class="purchase-data">
+        Ready to turn your travel dreams into reality? Visit VoyageScope now and enter our 
+        "Win a Dream Holiday" contest!
+        Explore our curated travel packages, 
+        indulge in unforgettable experiences, 
+        and enjoy seamless arrangements. With each purchase, 
+        you automatically enter for a chance to win an incredible vacation package.
+        Don't miss out! Start your journey today and get closer to 
+        winning the holiday of your dreams.
+        Happy travels!
+    </p>
 
-        <div class="purchase-inner-container">
-            <h3 class="purchase-title">Purchase and Win a Holiday!</h3>
+    <a href="http://voyagescope.com"><button class="btn purchase-btn">Check out Now!</button></a>
+  </div>
 
-            <p class="purchase-data">
-                Ready to turn your travel dreams into reality? Visit VoyageScope now and enter our 
-                "Win a Dream Holiday" contest!
-                Explore our curated travel packages, 
-                indulge in unforgettable experiences, 
-                and enjoy seamless arrangements. With each purchase, 
-                you automatically enter for a chance to win an incredible vacation package.
-                Don't miss out! Start your journey today and get closer to 
-                winning the holiday of your dreams.
-                Happy travels!
-            </p>
+  <section class="py-5" style="background-color: #eee;">
+    <div class="container my-5">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-8">
+          <div class="card text-black" style="border-radius: 25px;">
+            <div class="card-body p-md-5">
+              <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-7 order-2 order-lg-1">
 
-            <a href="http://voyagescope.com"><button class="btn purchase-btn">Check out Now!</button></a>
-        </div>
-    </div>
+                  <p class="text-center h3 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
 
-    <section class="py-5" style="background-color: #eee;">
-        <div class="container my-5">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-lg-8">
-              <div class="card text-black" style="border-radius: 25px;">
-                <div class="card-body p-md-5">
-                  <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-7 order-2 order-lg-1">
-      
-                      <p class="text-center h3 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
-      
-                      <form class="mx-1 mx-md-4">
-      
-                        <div class="d-flex flex-row align-items-center mb-4">
-                          <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                          <div class="form-outline flex-fill mb-0">
-                            <input type="text" id="form3Example1c" class="form-control" />
-                            <label class="form-label" for="form3Example1c">Your Name</label>
-                          </div>
-                        </div>
-      
-                        <div class="d-flex flex-row align-items-center mb-4">
-                          <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                          <div class="form-outline flex-fill mb-0">
-                            <input type="email" id="form3Example3c" class="form-control" />
-                            <label class="form-label" for="form3Example3c">Your Email</label>
-                          </div>
-                        </div>
-      
-                        <div class="d-flex flex-row align-items-center mb-4">
-                          <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
-                          <div class="form-outline flex-fill mb-0">
-                            <input type="password" id="form3Example4c" class="form-control" />
-                            <label class="form-label" for="form3Example4c">Password</label>
-                          </div>
-                        </div>
-      
-                        <div class="d-flex flex-row align-items-center mb-4">
-                          <i class="fas fa-key fa-lg me-3 fa-fw"></i>
-                          <div class="form-outline flex-fill mb-0">
-                            <input type="password" id="form3Example4cd" class="form-control" />
-                            <label class="form-label" for="form3Example4cd">Repeat your password</label>
-                          </div>
-                        </div>
-      
-                        <div class="form-check d-flex justify-content-center mb-5">
-                          <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
-                          <label class="form-check-label" for="form2Example3">
-                            I agree all statements in <a href="#!">Terms of service</a>
-                          </label>
-                        </div>
-      
-                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                          <button type="button" class="btn btn-lg register-btn">Register</button>
-                        </div>
-      
-                      </form>
-      
+                  <form class="mx-1 mx-md-4">
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="text" id="form3Example1c" class="form-control" />
+                        <label class="form-label" for="form3Example1c">Your Name</label>
+                      </div>
                     </div>
-                  </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="email" id="form3Example3c" class="form-control" />
+                        <label class="form-label" for="form3Example3c">Your Email</label>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="password" id="form3Example4c" class="form-control" />
+                        <label class="form-label" for="form3Example4c">Password</label>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="password" id="form3Example4cd" class="form-control" />
+                        <label class="form-label" for="form3Example4cd">Repeat your password</label>
+                      </div>
+                    </div>
+
+                    <div class="form-check d-flex justify-content-center mb-5">
+                      <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                      <label class="form-check-label" for="form2Example3">
+                        I agree all statements in <a href="#!">Terms of service</a>
+                      </label>
+                    </div>
+
+                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                      <button type="button" class="btn btn-lg register-btn">Register</button>
+                    </div>
+
+                  </form>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
